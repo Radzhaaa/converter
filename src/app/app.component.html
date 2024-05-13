@@ -1,0 +1,18 @@
+<div class="title">Coinverter</div>
+<div class="countries">
+  <div>
+  RUB: <input type="number" class="rubles" id="rubleNum" (keyup)="onKey($event)">
+  </div>
+  <h3 class="dollar">
+    DOLLAR : {{(this.inputValue / this.dollar).toFixed(2)}}
+  </h3>
+  <h3 class="euro">
+    EURO : {{(this.inputValue / this.euro).toFixed(2)}}
+  </h3>
+  <h3 class="pound">
+    POUND : {{(this.inputValue / this.pound).toFixed(2)}}
+  </h3>
+  <h3 class="yen">
+    YEN : {{(this.inputValue / this.yen).toFixed(2)}}
+  </h3>
+</div>
